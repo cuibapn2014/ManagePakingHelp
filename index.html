@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
+        integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css"
+        integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            display: block;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            transition: .15s ease-in;
+        }
+        
+        a:hover li{
+            padding-left: 2rem;
+        }
+        </style>
+    <title>Hỗ trợ người dùng | Quản lý bãi xe</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+            data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 65vh;">
+                <div class="carousel-item active">
+                    <img src="/images/parking-1.jpg" class="d-block w-100" alt="Parking" data-bs-interval="10000">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/parking-2.jpg" class="d-block w-100" alt="Parking" data-bs-interval="5000">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/parking-3.png" class="d-block w-100" alt="Parking" data-bs-interval="3000">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section class="container-sm flex flex-column justify-content-center p-5">
+        <h2 class="display-4 fs-3">Phần mềm quản lý bãi giữ xe</h2>
+        <div class="w-100 text-justify">
+            <h3 class="fs-5 font-weight-normal">1. Giới thiệu</h3>
+            <p class="text text-justify">Phần mềm bãi giữ xe là phần mềm được phát triển bởi nhóm sinh viên GDU
+                nhằm giúp các doanh nghiệp có nghiệp vụ quản lý giữ xe có thể dễ dàng trong việc quản lý xe trong bãi.
+                Góp phần tăng
+                hiệu suất cho doanh nghiệp.
+            </p>
+            <h3 class="fs-5 font-weight-normal">2. Hướng dẫn sử dụng</h3>
+            <h4 class="fs-5 font-weight-normal" id="link-login">2.1 Đăng nhập</h4>
+            <figure class="figure">
+                <img src="images/tutorial/login.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện đăng nhập</figcaption>
+            </figure><br>
+            <p class="text">
+            <ul>
+                <li>B1: Nhập thông tin tài khoản người dùng của bạn đã đăng ký trong hệ thống trước đó</li>
+                <li>B2: Nhập thông tin mật khẩu trùng khớp với tên tài khoản mà bạn đã đăng ký</li>
+                <li>B3: Nhấp vào nút đăng nhập</li>
+            </ul>
+            </p>
+            <h4 class="fs-5 font-weight-normal">2.2 Giao diện Admin đối với người quản lý</h4>
+            <p>Sau khi đăng nhập thành công (Tài khoản của quản lý)</p>
+            <figure class="figure">
+                <img src="images/tutorial/analyst.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện admin quản lý</figcaption>
+            </figure><br>
+            <p class="text">Khi đã đăng nhập thành công bạn sẽ được trả về giao diện như hình bên trên.
+                Ở Tab Doanh thu, admin chỉ có thể xem các thống kê về doanh thu, lợi nhuận hay tỉ lệ xe gửi được thống
+                kê theo biểu đồ.
+            </p>
+            <figure class="figure" id="link-issue">
+                <img src="images/tutorial/issue.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện sự cố</figcaption>
+            </figure><br>
+            <p class="text">Ở tab giao diện Sự cố khách hàng bạn có thể kiểm tra xe mà khách hàng báo sự cố có
+                thực sự tồn tại trong hệ thống hay không bằng danh sách bên phải giao diện. Khi quản lý đã kiểm tra
+                thông tin chính xác thì tiếp theo có thể ghi thông tin biên lai qua các bước sau:
+            <ul>
+                <li>B1: Nhập mô tả sự cố mà khách hàng đã báo</li>
+                <li>B2: Nhập giá trị biên lai phải bồi thường cho khách hàng</li>
+                <li>B3: Nhấp vào nút thêm để biên lai được ghi vào hệ thống</li>
+            </ul>
+            </p>
+            <figure class="figure" id="link-addUser">
+                <img src="images/tutorial/addUser.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý nhân viên</figcaption>
+            </figure><br>
+            <p class="text">Ở tab giao diện Quản lý thành viên bạn có thể xem những nhân viên đã thêm vào hệ thống bằng
+                danh sách
+                bên phải giao diện. Bạn có thể thực hiện tìm kiếm nhân viên với tên của họ bằng cách nhập tên nhân viên
+                vào ô <strong>Tên nhân viên</strong> và chọn nút <strong>Tìm kiếm</strong>
+                . Thật đơn giản đúng không :). Tiếp theo là thêm một nhân viên vào hệ thống, các bạn sẽ thực hiện theo
+                các bước sau:
+            <ul>
+                <li>B1: Nhập tên tài khoản</li>
+                <li>B2: Nhập mậu khẩu</li>
+                <li>B3: Nhập họ tên nhân viên</li>
+                <li>B4: Chọn ngày sinh</li>
+                <li>B5: Nhập số điện thoại liên hệ của nhân viên</li>
+                <li>B6: Nhập địa chỉ liên hệ của nhân viên</li>
+                <li>B7: Nhập email liên hệ của nhân viên</li>
+                <li>B8: Chọn nút thêm để ghi thông tin vào hệ thống</li>
+            </ul>
+            Bên cạnh đó chúng ta cũng có thể xuất file excel để báo cáo bằng cách nhấp nút <strong>Xuất Excel</strong>.
+            <br>
+            Bạn có thể xóa nhân viên bằng cách sau:
+            <figure class="figure">
+                <img src="images/tutorial/delete-1.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý nhân viên</figcaption>
+            </figure><br>
+            <figure class="figure">
+                <img src="images/tutorial/delete-2.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý nhân viên</figcaption>
+            </figure><br>
+            <ul>
+                <li>B1: Chọn dòng cần xóa</li>
+                <li>B2: Nhấp vào nút Xóa</li>
+                <li>B3: Chọn Yes</li>
+            </ul>
+            </p>
+            <h4 class="fs-5 font-weight-normal">2.3 Giao diện Admin đối với nhân viên</h4>
+            <p>Sau khi đăng nhập thành công hệ thống sẽ trả về giao diện như sau</p>
+            <figure class="figure">
+                <img src="images/tutorial/mainUI.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện chính</figcaption>
+            </figure><br>
+            <p class="text">Khi bạn muốn chọn giao diện ở cổng xe vào thì chọn menu <strong>Quản
+                    lý</strong>-><strong>Quản lý xe vào</strong>
+            <figure class="figure" id="link-addVehicle">
+                <img src="images/tutorial/in-main.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe vào</figcaption>
+            </figure><br>
+            Làm thế nào để thêm một xe vào hệ thống khi khách hàng muốn gửi xe? Các bạn làm theo các bước sau đây để
+            thực hiện điều đó:
+            <figure class="figure">
+                <img src="images/tutorial/in-add.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe vào</figcaption>
+            </figure><br>
+            <ul>
+                <li>B1: Chọn loại xe mà khách hàng sẽ gửi</li>
+                <li>B2: Chọn ô đỗ còn ở trạng thái <strong>Còn trống</strong></li>
+                <li>B3: Nhập biển kiểm soát xe của khách hàng</li>
+                <li>B4: Chọn nút Thêm vào để ghi thông tin vào hệ thống</li>
+            </ul>
+            Tiếp theo sẽ hướng dẫn các bạn có thể chỉnh sửa thông tin xe được gửi vào khi mà nhân viên nhập bất cẩn nhập
+            sai thông tin và muốn thay đổi với các bước sau:
+            <figure class="figure" id="link-editVehicle">
+                <img src="images/tutorial/in-edit.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện tab Danh sách xe gửi</figcaption>
+            </figure><br>
+            <figure class="figure">
+                <img src="images/tutorial/in-edit-2.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe vào</figcaption>
+            </figure><br>
+            <ul>
+                <li>B1: Trước tiên để chỉnh sửa, bạn phải chọn xem tab <strong>Danh sách xe gửi</strong></li>
+                <li>B2: Chọn vào dữ liệu xe cần sửa trong danh sách xe gửi bằng cách nhấp đúp chuột vào dòng bạn muốn
+                    sửa</li>
+                <li>B3: Sau khi bạn đã thay đổi thông tin mình muốn sửa (Vị trí đỗ, biển kiểm soát, Loại xe gửi) thì bạn
+                    chọn nút <strong>Sửa</strong> để cập nhật thông tin mới</li>
+            </ul>
+            <strong>Chú ý:</strong> Nếu bạn không biết cách để thay đổi thông tin mong muốn, hãy xem lại hướng dẫn thêm
+            xe vào hệ thống phía trên tài liệu này.
+            <br>
+            - Để quay về giao diện chính thì bạn chỉ cần chọn vào menu <strong>Quay lại</strong> phía trên giao diện.
+            </p>
+            <p class="text">Tiếp theo trong tài liệu này sẽ hướng dẫn làm thế nào để thu tiền, trả xe cho khách hàng.
+                Để thực hiện chức năng giao xe và thu tiền thì trước tiên bạn phải vào khu vực cho cổng xe ra bằng cách
+                vào giao diện Quản lý xe ra.
+                Ở giao diện chính của nhân viên, bạn chọn <strong>Quản lý</strong>-><strong>Quản lý xe ra</strong>
+            <figure class="figure" id="link-outVehicle">
+                <img src="images/tutorial/out-main.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe ra</figcaption>
+            </figure><br>
+            Bạn sẽ thực hiện các bước sau để hoàn tất việc thu tiền:
+            <figure class="figure">
+                <img src="images/tutorial/payment.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe ra</figcaption>
+            </figure><br>
+            <ul>
+                <li>B1: Chọn dòng dữ liệu mà bạn muốn xử lý</li>
+                <li>B2: Giao diện hiện thị đã chọn mã vé muốn xử lý</li>
+                <li>B3: Chọn nút <strong>Tính tiền</strong></li>
+            </ul>
+            <figure class="figure">
+                <img src="images/tutorial/finish.png" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Giao diện quản lý xe ra</figcaption>
+            </figure><br>
+            <strong>Kết quả cuối cùng</strong>
+            </p>
+            <h4 class="fs-5 font-weight-bold">#Một số hướng dẫn khác</h4>
+            <p class="text">
+                1. Đăng xuất: <br>
+                - Bạn chọn <strong>Cá nhân</strong>-><strong>Đăng xuất</strong><br>
+                - Khi ở giao diện chính bạn chọn <strong>Quản lý</strong>-><strong>Đăng xuất</strong>
+            </p>
+            <h4 class="fs-4 font-weight-bold">Một số câu hỏi thường gặp</h4>
+            <ul class="list-group">
+                <a href="#link-addVehicle">
+                    <li class="list-group-item">Làm thế nào để thêm một xe vào hệ thống ?</li>
+                </a>
+                <a href="#link-editVehicle">
+                    <li class="list-group-item">Làm thế nào để chỉnh sửa thông tin xe đã gửi khi nhập sai ?</li>
+                </a>
+                <a href="#link-outVerhicle">
+                    <li class="list-group-item">Cách để thu tiền trả xe cho khách ?</li>
+                </a>
+                <a href="#link-issue">
+                    <li class="list-group-item">Làm sao để xử lý sự cố xảy ra ?</li>
+                </a>
+                <a href="#link-login">
+                    <li class="list-group-item">Hướng dẫn đăng nhập vào hệ thống Admin và Nhân viên</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <footer class="w-100 bg-dark text-center p-2 text-white">
+        <i class="fa-solid fa-copyright"></i> Copyright 2022, Powered by Nguyen Manh Tuan with others
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/brands.min.js"
+    integrity="sha512-KGeeDLRAGeJZYsq3J/4s/X6eZyaxTAlScSN2b7z/H/r2MBZ3pAg4T52SzavEJa2Uthmll5HMhvRaLeuxT76EVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/regular.min.js"
+    integrity="sha512-eH31QC2/CLTAQpugtCMQh/w68mbefCbaDTsSbmqOk86RICy523PnuNMaFfQ5cAkwwJ1dsnn7OUt8bfkF24zprg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
